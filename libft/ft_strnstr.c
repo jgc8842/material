@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 20:14:27 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/01 11:07:47 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/01 11:21:10 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	char str1[100] = "Hay una aguja en el pajar";
 	char str2[100] = "ag";
 
-	printf("%s\n", ft_strnstr(str1, str2, 9));
-		return (0);
+	printf("%s\n", ft_strnstr(str1, str2, 10));
+	printf("%s\n", strnstr(str1, str2, 10));
+	return (0);
 }*/
