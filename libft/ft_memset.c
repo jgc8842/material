@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 20:48:07 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/25 12:04:18 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/01 17:29:32 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-/*int main()
+/*
+int main()
 {
 	char str[100] = "el peluca sapeeee";
 	char str1[100] = "el peluca sapeeee";
@@ -38,4 +39,5 @@ void	*ft_memset(void *b, int c, size_t len)
 	assert(!strcmp (str, str1));
 	puts("memset OK");
 	return (0);
-}*/
+}
+*/
