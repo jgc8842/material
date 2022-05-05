@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 15:11:59 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/01 18:00:17 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/05 18:19:04 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_calloc(size_t count, size_t size)
 
 	tot_size = size * count;
 	dst = malloc(tot_size);
+	if (!dst)
+		return (0);
 	ft_memset(dst, 0, tot_size);
 	return (dst);
 }

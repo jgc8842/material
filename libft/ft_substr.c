@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 19:25:15 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/01 20:34:01 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/05 19:09:23 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s2)
 		return (0);
 	i = start;
+	if (start >= ft_strlen(s))
+		return(0);
 	j = 0;
 	while (s[i] != '\0' && j < len)
 	{
@@ -29,13 +31,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		i++;
 		j++;
 	}
+	s2[j] = '\0';
 	return (s2);
 }
 
-/*int main()
+int main()
 {
 	char	str[100] = "Pepepaco";
 
 	printf("%s\n", ft_substr(str, 4, 6));  
 	return (0);
-}*/
+}

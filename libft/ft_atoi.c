@@ -6,41 +6,51 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 11:11:26 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/01 13:45:03 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/05 17:47:54 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static	int	ft_isspace(int c)
+{
+	if (c == '\t' || c == '\n' || c == '\v'
+		|| c == '\f' || c == '\r' || c == ' ')
+		return (1);
+	return (0);
+}
+
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	s;
-	int	res;
+	long	num;
+	int		sign;
 
-	i = 0;
-	s = 1;
-	res = 0;
-	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t'
-		|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	num = 0;
+	sign = 1;
+	while (ft_isspace(*str))
+		str++;
+	if (*str == '-')
 	{
-		if (str[i] == '-')
-				s = -1;
-		i++;
+		sign = -1;
+		str++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	else if (*str == '+')
+		str++;
+	while (ft_isdigit(*str))
+		num = num * 10 + (*str++ - '0');
+	num *= sign;
+	if (num != (int) num)
 	{
-		res = (res * 10) + (str[i] - '0');
-		i++;
+		if (sign > 0)
+			return (-1);
+		return (0);
 	}
-	return (res * s);
+	return ((int) num);
 }
 
 /*int	main()
 {
-	char	str[100] = "			       -123pepe";
+	char	str[100] = "			       -1236468461312318746318681354pepe";
 	
 	printf("%d\n", atoi(str));
 	printf("%d\n", ft_atoi(str));

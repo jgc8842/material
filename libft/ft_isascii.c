@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 11:38:57 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/24 19:28:33 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/04 16:44:09 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,7 @@ int	ft_isascii(int c)
 	return (c >= 0 && c <= 127);
 }
 
-/*#include <stdio.h>
-#include <ctype.h>
-
-int main()
+/*int main()
 {
 	char c, casera, oficial;
 

@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 20:23:58 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/26 11:36:38 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/05 13:43:36 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	size_t	i;
 	char	*d;
 	char	*s;
-
+	
+	if (dst == 0 && src == 0)
+		return (0);
 	i = 0;
 	d = (char *)dst;
 	s = (char *)src;

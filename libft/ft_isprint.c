@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 11:50:33 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/24 20:01:38 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/04 17:12:28 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	return (c >= 32 && c <= 127);
+	return (c >= 32 && c <= 126);
 }
 
 /*#include <stdio.h>
