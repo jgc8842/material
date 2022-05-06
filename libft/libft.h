@@ -6,19 +6,15 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 13:18:39 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/05 12:04:58 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/06 16:52:45 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <string.h>
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h>
-# include <assert.h>
-# include <ctype.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);

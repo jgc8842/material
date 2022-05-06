@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 18:46:10 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/03 15:34:35 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/06 17:06:50 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,8 @@ char	**ft_split(char const *s, char c)
 	char			*memory;
 	char			**array;
 
+	if (!s)
+		return (0);
 	len = ft_strlen(s);
 	memory = ft_strdup(s);
 	if (memory == 0)

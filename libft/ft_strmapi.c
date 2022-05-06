@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 18:09:09 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/03 19:47:50 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/06 16:32:43 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 	unsigned int	i;	
 
+	if (!s)
+		return (0);
 	str = ft_strdup(s);
 	if (str == 0)
 		return (0);

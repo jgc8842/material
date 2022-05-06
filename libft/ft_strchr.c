@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 12:08:05 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/28 13:28:41 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/06 18:36:31 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,17 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != '\0' && c != *s)
-		s++;
-	if (c == *s)
-		return ((char *)s);
+	char	*ptr;
+
+	ptr = (char *)s;
+	while (*ptr)
+	{
+		if (*ptr == (char) c)
+			return (ptr);
+		ptr++;
+	}
+	if (*ptr == (char) c)
+		return (ptr);
 	return (0);
 }
 

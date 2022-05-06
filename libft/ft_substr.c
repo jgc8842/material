@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 19:25:15 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/05 19:09:23 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/06 16:08:29 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,30 +15,36 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;
-	size_t			j;
+	unsigned int	size;
 	char			*s2;
+	unsigned int	strsize;
 
-	s2 = (char *)malloc(len + 1);
+	if (!s)
+		return (0);
+	strsize = ft_strlen(s);
+	if ((strsize - start) > len)
+		size = len + 1;
+	else
+		size = strsize - start + 1;
+	if (start >= strsize)
+			size = 1;
+	s2 = (char *)malloc(sizeof(char) * size);
 	if (!s2)
 		return (0);
-	i = start;
-	if (start >= ft_strlen(s))
-		return(0);
-	j = 0;
-	while (s[i] != '\0' && j < len)
+	i = 0;
+	while (s[start + i] && i < len && start < strsize)
 	{
-		s2[j] = s[i];
+		s2[i] = s[start + i];
 		i++;
-		j++;
 	}
-	s2[j] = '\0';
+	s2[i] = '\0';
 	return (s2);
 }
 
-int main()
+/*int main()
 {
 	char	str[100] = "Pepepaco";
 
-	printf("%s\n", ft_substr(str, 4, 6));  
+	printf("%s\n", ft_substr(str, 4, 3));  
 	return (0);
-}
+}*/

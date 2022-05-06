@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 11:55:32 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/04 12:15:09 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/06 17:41:36 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putendl_fd(char *s, int fd)
 {
 	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i] != '\0')
 	{

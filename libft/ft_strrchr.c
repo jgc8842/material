@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 13:30:57 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/28 16:23:10 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/06 18:52:34 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
-	int	k;
+	char	*ptr;
 
-	i = 0;
-	k = -1;
-	while (s[i] != '\0')
+	ptr = 0;
+	while (*s)
 	{	
-		if (s[i] == c)
-		{
-			k = i;
-		}
-		i++;
+		if (*s == (char)c)
+			ptr = (char *)s;
+		s++;
 	}	
-	if (c == '\0')
-		return ((char *)&s[i]);
-	if (k == -1)
-		return (0);
-	return ((char *)&s[k]);
+	if (*s == (char)c)
+		ptr = (char *)s;
+	return (ptr);
 }
 
 /*int main()

@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 11:32:41 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/04 11:53:37 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/06 16:52:12 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i] != '\0')
 	{
