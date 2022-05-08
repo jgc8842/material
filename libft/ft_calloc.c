@@ -6,16 +6,17 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 15:11:59 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/06 18:47:24 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 14:00:58 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(unsigned long count, unsigned long size)
 {
-	size_t	tot_size;
-	void	*dst;
+	unsigned int	tot_size;
+	void			*dst;
 
 	if (count + size < count || count + size < size)
 		return (0);

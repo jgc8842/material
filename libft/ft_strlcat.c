@@ -6,16 +6,16 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 18:46:07 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/28 11:15:40 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:39:35 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize)
 {
-	size_t	c;
-	size_t	d;
+	unsigned int	c;
+	unsigned int	d;
 
 	if (dstsize <= ft_strlen(dst))
 		return (dstsize + ft_strlen(src));

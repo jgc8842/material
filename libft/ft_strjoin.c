@@ -6,17 +6,18 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 10:49:05 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/06 16:10:39 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:45:59 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*s3;
-	size_t	i;
-	size_t	j;
+	char			*s3;
+	unsigned int	i;
+	unsigned int	j;
 
 	if (!s1 || !s2)
 		return (0);

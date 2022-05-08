@@ -6,13 +6,13 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 12:08:15 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/25 20:20:59 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:12:56 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, unsigned int n)
 {
 	char	*tmp;
 

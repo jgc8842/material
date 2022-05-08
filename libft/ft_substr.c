@@ -6,13 +6,14 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 19:25:15 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/06 16:08:29 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:41:52 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, unsigned int len)
 {
 	unsigned int	i;
 	unsigned int	size;

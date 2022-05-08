@@ -6,15 +6,15 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 16:31:42 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/28 20:50:23 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:38:16 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
 {
-	size_t	i;
+	unsigned int	i;
 
 	if (n == 0)
 		return (0);

@@ -6,10 +6,11 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 18:01:06 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/01 19:24:35 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:08:53 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)

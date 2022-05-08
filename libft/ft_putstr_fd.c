@@ -6,10 +6,11 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 11:32:41 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/06 16:52:12 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:44:18 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)

@@ -6,16 +6,16 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 20:14:27 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/01 11:21:10 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:39:09 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, unsigned int len)
 {
-	size_t	h;
-	size_t	n;
+	unsigned int	h;
+	unsigned int	n;
 
 	h = 0;
 	if (needle[0] == '\0')

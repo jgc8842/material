@@ -6,7 +6,7 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 12:18:05 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/05 13:20:28 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:43:34 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
+	unsigned int	i;
 
 	if (!s1 || !set)
 		return (0);

@@ -6,17 +6,17 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 11:38:52 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/26 13:24:31 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:46:38 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, unsigned int len)
 {
-	size_t	i;
-	char	*d;
-	char	*s;
+	unsigned int	i;
+	char			*d;
+	char			*s;
 
 	d = (char *)dst;
 	s = (char *)src;

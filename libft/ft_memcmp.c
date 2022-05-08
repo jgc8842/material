@@ -6,15 +6,15 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 17:56:00 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/29 20:11:36 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:36:35 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, unsigned int n)
 {
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
 	while (i < n)

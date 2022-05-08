@@ -6,13 +6,13 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 20:48:07 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/01 17:29:32 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:12:33 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, unsigned int len)
 {
 	char	*p;
 

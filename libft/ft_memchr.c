@@ -6,15 +6,15 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 16:51:17 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/04/29 19:45:55 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:35:16 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, unsigned int n)
 {
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
 	while (i < n)

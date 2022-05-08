@@ -6,10 +6,11 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 18:46:10 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/06 17:06:50 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:34:32 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 static char	**point_to_strings(char *memory, unsigned int len, int words)

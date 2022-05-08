@@ -6,17 +6,17 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 20:23:58 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/06 17:36:22 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:46:23 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, unsigned int n)
 {
-	size_t	i;
-	char	*d;
-	char	*s;
+	unsigned int	i;
+	char			*d;
+	char			*s;
 
 	if (dst == 0 && src == 0)
 		return (0);

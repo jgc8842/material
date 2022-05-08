@@ -6,13 +6,13 @@
 /*   By: jgil-cam <jgil-cam@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/24 11:58:43 by jgil-cam          #+#    #+#             */
-/*   Updated: 2022/05/01 15:09:55 by jgil-cam         ###   ########.fr       */
+/*   Updated: 2022/05/08 13:10:31 by jgil-cam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+unsigned int	ft_strlen(const char *s)
 {
 	int	i;
 
